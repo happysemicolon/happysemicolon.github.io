@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Cedric Lee - Full-Stack Developer</title>
+    <meta name="title" content="Cedric Lee - Full-Stack Developer">
+    <meta name="description" content="Cedric Lee - Full Stack Developer with 8 years of experience designing, building, and maintaining web applications across the full stack. Specializes in React, Node.js, and cloud-native architectures.">
+    <meta name="keywords" content="Cedric Lee, Full-Stack Developer, React, Node.js, Singapore, AWS, PostgreSQL">
+    <meta name="author" content="Cedric Lee">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cedric Lee - Full-Stack Developer">
+    <meta property="og:description" content="Full Stack Developer with 8 years experience in React, Node.js, cloud-native architectures. Singapore.">
+    <meta property="og:image" content="profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Cedric Lee - Full-Stack Developer">
+    <meta property="twitter:description" content="Full Stack Developer with 8 years experience in React, Node.js, cloud architectures.">
+    
+    <!-- Theme -->
+    <meta name="theme-color" content="#7c3aed">
+    
+    <!-- Favicon - Add your photo as favicon.png -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes slideUp { 0% { transform: translateY(20px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-fade-in { animation: fadeIn 0.5s ease-in-out; }
+        .animate-slide-up { animation: slideUp 0.5s ease-out; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-inter antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-xl font-bold text-white hover:text-purple-400">
+                    <i class="fas fa-code text-purple-500 mr-2"></i>Cedric Lee
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-1 text-gray-400 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 pb-4">
+            <a href="#home" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">About</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Portfolio</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Skills</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Experience</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left animate-fade-in">
+                    <span class="inline-block px-4 py-2 bg-purple-600/20 text-purple-300 rounded-full text-sm font-medium mb-4">
+                        <i class="fas fa-rocket mr-2"></i>Available for Projects
+                    </span>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                        Cedric <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Lee</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-300 mb-4">Full-Stack Developer</p>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-8">
+                        8+ years building scalable web applications with React, Node.js, and cloud-native architectures. 
+                        Specializing in microservices, SaaS platforms, and performance optimization.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <a href="https://docs.google.com/document/d/1M4MbNKldFkgrXpH0iKO3d7L2xP08ZhxJAliYiQwqCyM/edit?usp=drive_link" download class="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-file mr-2"></i>Resume
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-envelope mr-2"></i>Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <!-- Profile Image - Replace with your photo -->
+                <div class="relative flex justify-center lg:justify-end animate-float">
+                    <div class="w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-2xl">
+                        <img src="profile.jpg" alt="Cedric Lee" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    About <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Me</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Full-Stack Developer passionate about clean code and scalable solutions</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Full-Stack Developer with 8 years experience designing and building web applications. 
+                        Specialize in React, Node.js, and cloud-native architectures for fast-paced product teams.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Led development of multi-tenant SaaS platforms, payments microservices, and inventory systems. 
+                        Proven track record reducing deployment times, API latency, and manual processes through modern DevOps practices.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-6 bg-gray-800/80 rounded-xl border border-gray-700">
+                            <div class="text-3xl font-bold text-purple-400 mb-2" data-count="8">8+</div>
+                            <div class="text-gray-400 text-sm">Years Experience</div>
+                        </div>
+                        <div class="text-center p-6 bg-gray-800/80 rounded-xl border border-gray-700">
+                            <div class="text-3xl font-bold text-purple-400 mb-2" data-count="20">20+</div>
+                            <div class="text-gray-400 text-sm">Projects Delivered</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    My <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Projects</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Showcase of recent full-stack applications and microservices</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Inventory Order Management -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Inventory System" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">SaaS</span>
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">Full-Stack</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Inventory Order Management</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Full-stack inventory system for retailers with React dashboards, Node.js APIs, PostgreSQL. Reduced manual work by 50%.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">React</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">PostgreSQL</span>
+                        </div>
+                        <!-- <a href="#" class="text-purple-400 hover:text-purple-300 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- Task Time Tracking -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-b1f4e8a30c4c?w=400&h=250&fit=crop" alt="Time Tracking" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs font-medium">Productivity</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Task Time Tracking</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Time tracking platform with React hooks frontend, Node.js/Express API, MongoDB. Server-side pagination for 1000s of records.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">React Hooks</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">MongoDB</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Express</span>
+                        </div>
+                        <!-- <a href="#" class="text-purple-400 hover:text-purple-300 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- Payments Microservice -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" alt="Payments" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-yellow-600/20 text-yellow-300 rounded text-xs font-medium">Microservice</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Payments & Billing</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Node.js microservice with Stripe/PayPal integration, REST APIs, webhook handling, idempotency checks for reliable payments.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Stripe</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">REST API</span>
+                        </div>
+                        <!-- <a href="#" class="text-purple-400 hover:text-purple-300 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- NovaLink SaaS Platform -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300 lg:col-span-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=250&fit=crop" alt="SaaS Platform" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">Enterprise</span>
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">SaaS</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Multi-Tenant SaaS Platform</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Led development at NovaLink Technologies. React, Node.js, PostgreSQL multi-tenant platform. 30% faster onboarding, 40% lower API latency, 90% test coverage.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">React</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">NestJS</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">GraphQL</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Tech <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Stack</span>
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-desktop text-purple-400 mr-3"></i>Frontend</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>React, Next.js, TypeScript</div>
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>HTML5, CSS3, JavaScript ES6+</div>
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>Redux, Tailwind CSS</div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-server text-purple-400 mr-3"></i>Backend</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>Node.js, Express.js, NestJS</div>
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>REST APIs, GraphQL</div>
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>Microservices Architecture</div>
+                    </div>
+                </div>
+                <!-- Database & DevOps -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-database text-purple-400 mr-3"></i>Database & DevOps</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>PostgreSQL, MySQL, MongoDB</div>
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>AWS (EC2, RDS, Lambda, S3)</div>
+                        <div class="flex items-center"><i class="fas fa-check text-purple-500 mr-3 w-5"></i>Docker, GitHub Actions, CI/CD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id = "experience" class="py-20 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Work</h2>
+                <p class="text-xl text-gray-400">Professional experience across Singapore tech companies</p>
+            </div>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 to-transparent"></div>
+                
+                <!-- NovaLink -->
+                <div class="mb-12 flex items-start">
+                    <div class="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center border-2 border-purple-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-briefcase text-purple-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Senior Full Stack Developer</h3>
+                            <span class="ml-4 text-sm text-gray-400">Jan 2022 - Present</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-purple-400 mb-3">NovaLink Technologies Pte Ltd</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Multi-tenant SaaS platform (React, Node.js, PostgreSQL)</li>
+                            <li>• Payments microservice (Stripe/PayPal integration)</li>
+                            <li>• CI/CD pipelines reduced deployment from hours to 15min</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BrightWave -->
+                <div class="mb-12 flex items-start">
+                    <div class="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center border-2 border-purple-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-briefcase text-purple-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Full Stack Developer</h3>
+                            <span class="ml-4 text-sm text-gray-400">Aug 2018 - Dec 2021</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-purple-400 mb-3">BrightWave Digital Pte Ltd</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Client dashboards (React + Node.js/Express + MongoDB)</li>
+                            <li>• JWT auth & RBAC (25% fewer support tickets)</li>
+                            <li>• Payment gateways (20% recurring revenue increase)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skyline -->
+                <div class="flex items-start">
+                    <div class="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center border-2 border-purple-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-briefcase text-purple-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Web Developer</h3>
+                            <span class="ml-4 text-sm text-gray-400">Jul 2017 - Jul 2018</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-purple-400 mb-3">Skyline Interactive Studio</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Responsive sites (HTML/CSS/JS + PHP/Laravel)</li>
+                            <li>• 35% page load improvement via optimization</li>
+                            <li>• Pixel-perfect mobile-first experiences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Let's <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Work</span> Together
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Open for new full-stack projects and collaborations</p>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Get in touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-purple-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <a href="mailto:happysemicolon@gmail.com" class="text-purple-400 hover:text-purple-300 font-mono">happysemicolon@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-purple-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Location</div>
+                                <div>Shenton Way, Singapore 068805</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fab fa-github text-purple-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">GitHub</div>
+                                <a href="https://github.com/happysemicolon" target="_blank" class="text-purple-400 hover:text-purple-300 font-mono">@happysemicolon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea rows="5" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-vertical"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-4 px-8 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-[1.02] shadow-xl">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/80 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://github.com/happysemicolon" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-github text-2xl"></i></a>
+                <a href="https://linkedin.com/in/" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-linkedin text-2xl"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Cedric Lee. Built with ❤️ and lots of coffee.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.style.backgroundColor = 'rgba(17, 24, 39, 0.95)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(17, 24, 39, 0.8)';
+            }
+        });
+
+        // Counter animation (for experience numbers)
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            counters.forEach(counter => {
+                const target = parseInt(counter.dataset.count);
+                const increment = target / 100;
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counters on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        document.querySelector('#about').addEventListener('mouseenter', animateCounters);
+    </script>
+</body>
+</html>

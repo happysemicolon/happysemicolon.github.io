@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Cedric Lee - Mobile Developer</title>
+    <meta name="title" content="Cedric Lee - Mobile Developer">
+    <meta name="description" content="Cedric Lee - Mobile Developer with 7+ years experience in React Native, Swift, Kotlin. Native & cross-platform apps. Singapore-based.">
+    <meta name="keywords" content="Cedric Lee, Mobile Developer, React Native, Swift, Kotlin, iOS, Android, Singapore">
+    <meta name="author" content="Cedric Lee">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cedric Lee - Mobile Developer">
+    <meta property="og:description" content="Mobile Developer with 7+ years in React Native, Swift, Kotlin. 50K+ download apps. Singapore.">
+    <meta property="og:image" content="profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Cedric Lee - Mobile Developer">
+    <meta property="twitter:description" content="Mobile Developer with 7+ years React Native, Swift, Kotlin experience.">
+    
+    <!-- Theme -->
+    <meta name="theme-color" content="#10b981">
+    
+    <!-- Favicon - Add your photo as favicon.png -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes slideUp { 0% { transform: translateY(20px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-fade-in { animation: fadeIn 0.5s ease-in-out; }
+        .animate-slide-up { animation: slideUp 0.5s ease-out; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-inter antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-xl font-bold text-white hover:text-emerald-400">
+                    <i class="fas fa-mobile-alt text-emerald-500 mr-2"></i>Cedric Lee
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                    <a href="#work" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-1 text-gray-400 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 pb-4">
+            <a href="#home" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">About</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Portfolio</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Skills</a>
+            <a href="#work" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Experience</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-emerald-900/20 to-gray-900"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left animate-fade-in">
+                    <span class="inline-block px-4 py-2 bg-emerald-600/20 text-emerald-300 rounded-full text-sm font-medium mb-4">
+                        <i class="fas fa-rocket mr-2"></i>Available for Projects
+                    </span>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                        Cedric <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Lee</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-300 mb-4">Mobile Developer</p>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-8">
+                        7+ years building native & cross-platform mobile apps with React Native, Swift, Kotlin. 
+                        Delivered 50K+ download apps with payment gateways, push notifications, and App Store expertise.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <a href="https://docs.google.com/document/d/1kgy0YSr3Pn57LF3tzj0rh3W67qXpDnIZ0KyjMwjMB3A/edit?usp=drive_link" download class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-file mr-2"></i>Resume
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-envelope mr-2"></i>Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <!-- Profile Image - Replace with your photo -->
+                <div class="relative flex justify-center lg:justify-end animate-float">
+                    <div class="w-72 h-72 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-emerald-500/30 shadow-2xl">
+                        <img src="profile.jpg" alt="Cedric Lee" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    About <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Me</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Mobile Developer passionate about smooth user experiences across iOS & Android</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Mobile Developer with 7+ years experience designing, developing, and deploying native and cross-platform apps. 
+                        Proficient in React Native, Swift, and Kotlin with strong backend integration skills.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Delivered React Native app with 50K+ downloads featuring payment gateways, push notifications, offline sync. 
+                        Led migration from legacy native apps to React Native, reducing maintenance by 40%.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-6 bg-gray-800/80 rounded-xl border border-gray-700">
+                            <div class="text-3xl font-bold text-emerald-400 mb-2" data-count="7">7+</div>
+                            <div class="text-gray-400 text-sm">Years Experience</div>
+                        </div>
+                        <div class="text-center p-6 bg-gray-800/80 rounded-xl border border-gray-700">
+                            <div class="text-3xl font-bold text-emerald-400 mb-2" data-count="50">50K+</div>
+                            <div class="text-gray-400 text-sm">App Downloads</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Featured <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Apps</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Showcase of mobile applications across App Store & Play Store</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Retail Loyalty App -->
+                <div class="group bg-gray-800 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=600&fit=crop" alt="Retail App" class="w-full h-64 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <!-- <div class="absolute top-4 left-4 flex space-x-2">
+                            <a href="#" class="w-10 h-10 bg-emerald-600/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-emerald-700 transition-colors">
+                                <i class="fab fa-apple text-xs"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-emerald-600/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-emerald-700 transition-colors">
+                                <i class="fab fa-google-play text-xs"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-emerald-600/20 text-emerald-300 rounded text-xs font-medium">React Native</span>
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">50K+ Downloads</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Retail Loyalty App</h3>
+                        <p class="text-gray-400 mb-4 text-sm">React Native app with payment gateways, push notifications, offline sync for retail customers.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">React Native</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fitness Tracker -->
+                <div class="group bg-gray-800 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019612992-db802b5af4d0?w=400&h=600&fit=crop" alt="Fitness App" class="w-full h-64 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <!-- <div class="absolute top-4 left-4">
+                            <a href="#" class="w-10 h-10 bg-emerald-600/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-emerald-700 transition-colors">
+                                <i class="fab fa-apple text-xs"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">Native iOS</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Fitness Tracker</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Native iOS app with Swift, Apple Health integration, weekly performance summaries.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Swift</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Apple Health</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">XCTest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expense Manager -->
+                <div class="group bg-gray-800 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=400&h=600&fit=crop" alt="Expense App" class="w-full h-64 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <!-- <div class="absolute top-4 left-4 flex space-x-2">
+                            <a href="#" class="w-10 h-10 bg-emerald-600/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-emerald-700 transition-colors">
+                                <i class="fab fa-apple text-xs"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-emerald-600/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-emerald-700 transition-colors">
+                                <i class="fab fa-google-play text-xs"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">Cross-Platform</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Expense Manager</h3>
+                        <p class="text-gray-400 mb-4 text-sm">React Native app with Node.js backend, MongoDB encrypted data storage, secure transactions.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">React Native</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Tech <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Stack</span>
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mobile Development -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-mobile-alt text-emerald-400 mr-3"></i>Mobile</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>React Native, Flutter</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Swift, Kotlin, Android</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>SQLite, Realm</div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-server text-emerald-400 mr-3"></i>Backend</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Node.js, Express.js, NestJS</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>REST APIs, GraphQL</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Firebase, AWS Amplify</div>
+                    </div>
+                </div>
+                <!-- Tools & DevOps -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-tools text-emerald-400 mr-3"></i>Tools & DevOps</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Xcode, Android Studio, Fastlane</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Jest, Detox, XCTest</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Git, Jenkins, Docker</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id = "work" class="py-20 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Experience</h2>
+                <p class="text-xl text-gray-400">Mobile development across Singapore tech companies</p>
+            </div>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-500 to-transparent"></div>
+                
+                <!-- QuantumSoft -->
+                <div class="mb-12 flex items-start">
+                    <div class="w-16 h-16 bg-emerald-600/20 rounded-full flex items-center justify-center border-2 border-emerald-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-mobile-alt text-emerald-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Mobile Developer</h3>
+                            <span class="ml-4 text-sm text-gray-400">Feb 2021 - Oct 2025</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-emerald-400 mb-3">QuantumSoft Solutions</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• React Native app with 50K+ downloads (payments, push, offline)</li>
+                            <li>• 40% faster app startup (lazy loading, code splitting)</li>
+                            <li>• Legacy iOS/Android → React Native migration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BrightWave -->
+                <div class="mb-12 flex items-start">
+                    <div class="w-16 h-16 bg-emerald-600/20 rounded-full flex items-center justify-center border-2 border-emerald-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-mobile-alt text-emerald-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Full Stack Developer</h3>
+                            <span class="ml-4 text-sm text-gray-400">Jul 2017 - Jan 2021</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-emerald-400 mb-3">BrightWave Digital Pte Ltd</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Native iOS/Android apps from scratch</li>
+                            <li>• Node.js backend services for app sync/auth</li>
+                            <li>• 30% bug reduction via CI/automated tests</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Let's Build <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Apps</span> Together
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Open for iOS, Android, and cross-platform projects</p>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Get in touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-emerald-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-emerald-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <a href="mailto:happysemicolon@gmail.com" class="text-emerald-400 hover:text-emerald-300 font-mono block">happysemicolon@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-emerald-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-emerald-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Location</div>
+                                <div>Shenton Way, Singapore 068805</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-emerald-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fab fa-github text-emerald-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">GitHub</div>
+                                <a href="https://github.com/happysemicolon" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-mono">@happysemicolon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea rows="5" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-vertical"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white py-4 px-8 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-[1.02] shadow-xl">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/80 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://github.com/happysemicolon" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-github text-2xl"></i></a>
+                <a href="https://linkedin.com/in" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-linkedin text-2xl"></i></a>
+                <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-twitter text-2xl"></i></a> -->
+                <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-apple text-2xl"></i></a> -->
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Cedric Lee. Crafting mobile experiences with ❤️ from Singapore.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.style.backgroundColor = 'rgba(17, 24, 39, 0.95)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(17, 24, 39, 0.8)';
+            }
+        });
+    </script>
+</body>
+</html>
