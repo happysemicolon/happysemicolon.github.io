@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Cedric Lee - Web3 Developer</title>
+    <meta name="title" content="Cedric Lee - Web3 Developer">
+    <meta name="description" content="Cedric Lee - Web3 Developer specializing in Solidity, smart contracts, and full-stack dApps with React, TypeScript, and Node.js on EVM chains.">
+    <meta name="keywords" content="Cedric Lee, Web3 Developer, Solidity, Smart Contracts, React, TypeScript, Ethereum, Blockchain, dApps">
+    <meta name="author" content="Cedric Lee">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cedric Lee - Web3 Developer">
+    <meta property="og:description" content="Web3 Developer building secure smart contracts and full-stack dApps on Ethereum and EVM-compatible chains.">
+    <meta property="og:image" content="profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Cedric Lee - Web3 Developer">
+    <meta property="twitter:description" content="Solidity, React, TypeScript, Node.js, and blockchain infrastructure for production-grade dApps.">
+    
+    <!-- Theme -->
+    <meta name="theme-color" content="#10b981">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="edf2f0a2901c4a13a6051a1f493f5400.jpg@800w_800h_1l.jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes slideUp { 0% { transform: translateY(20px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-fade-in { animation: fadeIn 0.5s ease-in-out; }
+        .animate-slide-up { animation: slideUp 0.5s ease-out; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-inter antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-xl font-bold text-white hover:text-emerald-400">
+                    <i class="fas fa-cube text-emerald-500 mr-2"></i>Cedric Lee
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">dApps</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-1 text-gray-400 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 pb-4">
+            <a href="#home" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">About</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">dApps</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Skills</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Experience</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-emerald-900/20 to-gray-900"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left animate-fade-in">
+                    <span class="inline-block px-4 py-2 bg-emerald-600/20 text-emerald-300 rounded-full text-sm font-medium mb-4">
+                        <i class="fas fa-rocket mr-2"></i>Available for Web3 Projects
+                    </span>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                        Cedric <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Lee</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-300 mb-4">Web3 Developer • Solidity • React • TypeScript</p>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-8">
+                        Web3 developer building secure smart contracts and full-stack dApps on Ethereum and EVM chains.
+                        Focused on Solidity, Hardhat, and React/Next.js frontends, with production experience in DeFi, NFTs, and on-chain/off-chain integrations.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <a href="https://docs.google.com/document/d/1M4MbNKldFkgrXpH0iKO3d7L2xP08ZhxJAliYiQwqCyM/edit?usp=drive_link" target="_blank" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-file mr-2"></i>Resume
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-envelope mr-2"></i>Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <!-- Profile Image -->
+                <div class="relative flex justify-center lg:justify-end animate-float">
+                    <div class="w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-emerald-500/30 shadow-2xl">
+                        <img src="profile.jpg" alt="Cedric Lee" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    About <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Me</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Web3 Developer focused on secure smart contracts and user-friendly dApps</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Web3 Developer with solid experience designing, implementing, and shipping smart contracts and full-stack dApps.
+                        Specialize in Solidity, Hardhat, and Ethers.js on the backend, and React/Next.js with TypeScript on the frontend.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Comfortable with ERC-20/721/1155 standards, DeFi primitives, NFT collections, and integrating on-chain logic with off-chain services,
+                        subgraphs, and analytics. Passionate about gas optimization, testing, and good developer experience.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-6 bg-gray-800/80 rounded-xl border border-gray-700">
+                            <div class="text-3xl font-bold text-emerald-400 mb-2" data-count="5">5+</div>
+                            <div class="text-gray-400 text-sm">Years in Web Development</div>
+                        </div>
+                        <div class="text-center p-6 bg-gray-800/80 rounded-xl border border-gray-700">
+                            <div class="text-3xl font-bold text-emerald-400 mb-2" data-count="10">10+</div>
+                            <div class="text-gray-400 text-sm">Web3 / dApp Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web3 Projects Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Web3 <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">dApps</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Selected projects across DeFi, NFTs, and on-chain tooling</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- DeFi Staking -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c8?w=400&h=250&fit=crop" alt="DeFi Staking" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-emerald-600/20 text-emerald-300 rounded text-xs font-medium">DeFi</span>
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">Staking</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">DeFi Staking Module</h3>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            Solidity-based staking contracts for ERC-20 tokens with time-weighted rewards, gas-optimized storage, and on-chain emission logic.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Solidity</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Hardhat</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Ethers.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NFT Collection -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=400&h=250&fit=crop" alt="NFT Collection" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">NFT</span>
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">ERC-721A</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">NFT Mint & Royalties</h3>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            ERC-721A collection with Merkle allowlist, EIP-2981 royalties, reveal pipeline, and Next.js mint UI connected via Wagmi.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Solidity</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Next.js</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Wagmi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expense / Web3 Tool -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=400&h=250&fit=crop" alt="Web3 Analytics" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-yellow-600/20 text-yellow-300 rounded text-xs font-medium">Tooling</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Web3 Analytics & Rewards</h3>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            Node.js + The Graph indexing pipeline tracking contract events, computing rewards, and exposing analytics via a React dashboard.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">The Graph</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multi-chain dApp -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300 lg:col-span-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=250&fit=crop" alt="dApp" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-emerald-600/20 text-emerald-300 rounded text-xs font-medium">Multi-chain</span>
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">dApp</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Multi-Chain Dashboard dApp</h3>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            React/Next.js dApp using Wagmi and RainbowKit to support Ethereum, Polygon, and Arbitrum with multicall batching and on-chain/off-chain data.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">React</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">TypeScript</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">RainbowKit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Web3 <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Tech Stack</span>
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Smart Contracts -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-cube text-emerald-400 mr-3"></i>Smart Contracts</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Solidity, Hardhat, Foundry</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>OpenZeppelin, ERC-20/721/1155</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Ethers.js, Web3.js</div>
+                    </div>
+                </div>
+                <!-- Frontend dApps -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-desktop text-emerald-400 mr-3"></i>dApp Frontend</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>React, Next.js, TypeScript</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Wagmi, RainbowKit, Tailwind</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>WalletConnect, MetaMask</div>
+                    </div>
+                </div>
+                <!-- Backend & Infra -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-server text-emerald-400 mr-3"></i>Backend & Infra</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Node.js, NestJS, Python</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>PostgreSQL, Redis, The Graph</div>
+                        <div class="flex items-center"><i class="fas fa-check text-emerald-500 mr-3 w-5"></i>Docker, GitHub Actions, CI/CD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Experience</h2>
+                <p class="text-xl text-gray-400">Web3 & full-stack experience across modern stacks</p>
+            </div>
+            <div class="relative">
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-500 to-transparent"></div>
+                
+                <!-- Web3 Role -->
+                <div class="mb-12 flex items-start">
+                    <div class="w-16 h-16 bg-emerald-600/20 rounded-full flex items-center justify-center border-2 border-emerald-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-briefcase text-emerald-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Web3 Developer</h3>
+                            <span class="ml-4 text-sm text-gray-400">2022 - Present</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-emerald-400 mb-3">Freelance / Personal Projects</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Built and deployed Solidity contracts for tokens, NFTs, and staking modules.</li>
+                            <li>• Created full-stack dApps using React/Next.js, TypeScript, and Ethers.js.</li>
+                            <li>• Integrated subgraphs, analytics, and dashboards for on-chain data.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Previous Full-Stack -->
+                <div class="mb-12 flex items-start">
+                    <div class="w-16 h-16 bg-emerald-600/20 rounded-full flex items-center justify-center border-2 border-emerald-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-briefcase text-emerald-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Senior Full Stack Developer</h3>
+                            <span class="ml-4 text-sm text-gray-400">Before Web3 focus</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-emerald-400 mb-3">Various Companies</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>• Built SaaS platforms and microservices with React, Node.js, and PostgreSQL.</li>
+                            <li>• Implemented CI/CD pipelines and improved performance and reliability.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Let's <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Build</span> Together
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Get in touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-emerald-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-emerald-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <a href="mailto:happysemicolon@gmail.com" class="text-emerald-400 hover:text-emerald-300 font-mono">happysemicolon@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-emerald-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-emerald-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Location</div>
+                                <div>Shenton Way, Singapore 068805</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-emerald-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fab fa-github text-emerald-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">GitHub</div>
+                                <a href="https://github.com/happysemicolon" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-mono">@happysemicolon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea rows="5" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-vertical"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white py-4 px-8 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-[1.02] shadow-xl">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/80 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://github.com/happysemicolon" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-github text-2xl"></i></a>
+                <a href="https://linkedin.com/in/" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-linkedin text-2xl"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Cedric Lee. Built on-chain & off-chain with ❤️.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.style.backgroundColor = 'rgba(17, 24, 39, 0.95)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(17, 24, 39, 0.8)';
+            }
+        });
+
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            counters.forEach(counter => {
+                const target = parseInt(counter.dataset.count);
+                const increment = target / 100;
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 20);
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        observer.observe(document.querySelector('#about'));
+    </script>
+</body>
+</html>
