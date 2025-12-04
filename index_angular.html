@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Primary SEO Meta Tags -->
+    <title>Cedric Lee - Senior Angular Developer</title>
+    <meta name="title" content="Cedric Lee - Senior Angular Developer">
+    <meta name="description" content="Cedric Lee - Senior Angular Developer with 7+ years building enterprise-grade SPAs, PWAs, and scalable frontend architectures on Angular 17+. Expert in NgRx, RxJS, Nx monorepos.">
+    <meta name="keywords" content="Cedric Lee, Senior Angular Developer, Angular 17, NgRx, RxJS, Singapore, TypeScript, Nx Monorepo">
+    <meta name="author" content="Cedric Lee">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cedric Lee - Senior Angular Developer">
+    <meta property="og:description" content="Senior Angular Developer with 7+ years experience in Angular 17+, NgRx, RxJS, Nx monorepos. Singapore.">
+    <meta property="og:image" content="profile.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Cedric Lee - Senior Angular Developer">
+    <meta property="twitter:description" content="Senior Angular Developer with 7+ years experience in Angular 17+, NgRx, RxJS, Nx monorepos.">
+    <!-- Theme -->
+    <meta name="theme-color" content="#7c3aed">
+    <!-- Favicon - Add your photo as favicon.png -->
+    <link rel="icon" type="image/jpg" href="edf2f0a2901c4a13a6051a1f493f5400.jpg?800w&800h&1l">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes slideUp { 0% { transform: translateY(20px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-fade-in { animation: fadeIn 0.5s ease-in-out; }
+        .animate-slide-up { animation: slideUp 0.5s ease-out; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-inter antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-xl font-bold text-white hover:text-purple-400">
+                    <i class="fas fa-angular text-orange-400 mr-2"></i>Cedric Lee
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-1 text-gray-400 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 pb-4">
+            <a href="#home" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">About</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Portfolio</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Skills</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Experience</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-orange-900/20 to-gray-900"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left animate-fade-in">
+                    <span class="inline-block px-4 py-2 bg-orange-600/20 text-orange-300 rounded-full text-sm font-medium mb-4">
+                        <i class="fas fa-angular mr-2"></i>Available for Projects
+                    </span>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                        Cedric <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Lee</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-300 mb-4">Senior Angular Developer</p>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-8">
+                        7+ years building enterprise-grade SPAs, PWAs, and scalable frontend architectures on Angular 17+. 
+                        Expert in NgRx, RxJS, Nx monorepos, and performance optimization.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <a href="https://docs.google.com/document/d/1M4MbNKldFkgrXpH0iKO3d7L2xP08ZhxJAliYiQwqCyM/edit?usp=drive_link" download class="px-8 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-file mr-2"></i>Resume
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-envelope mr-2"></i>Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <!-- Profile Image - Replace with your photo -->
+                <div class="relative flex justify-center lg:justify-end animate-float">
+                    <div class="w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-orange-500/30 shadow-2xl">
+                        <img src="profile.jpg" alt="Cedric Lee" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">About <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Me</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Senior Angular Developer passionate about clean code and scalable solutions</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Senior Angular Developer with 7+ years experience designing and building enterprise applications. 
+                        Specialize in Angular 17+, NgRx, RxJS, and Nx monorepos for fast-paced product teams.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Led development of enterprise dashboards, e-commerce platforms, and PWA marketing suites. 
+                        Proven track record reducing bundle sizes, improving Lighthouse scores, and accelerating development velocity.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-6 bg-gray-800/80 rounded-xl border border-gray-700">
+                            <div class="text-3xl font-bold text-orange-400 mb-2" data-count="7+">7+</div>
+                            <div class="text-gray-400 text-sm">Years Experience</div>
+                        </div>
+                        <div class="text-center p-6 bg-gray-800/80 rounded-xl border border-gray-700">
+                            <div class="text-3xl font-bold text-orange-400 mb-2" data-count="20+">20+</div>
+                            <div class="text-gray-400 text-sm">Projects Delivered</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">My <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Projects</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Showcase of recent Angular applications and enterprise solutions</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Enterprise Dashboard Platform -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Enterprise Dashboard" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-orange-600/20 text-orange-300 rounded text-xs font-medium">Enterprise</span>
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">Angular 17+</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Enterprise Dashboard Platform</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Angular 17+ standalone components + signals architecture. 42% bundle reduction, 98+ Lighthouse scores.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Angular Signals</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">RxJS</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Nx Monorepo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Commerce Micro-Frontends -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-b1f4e8a30c4c?w=400&h=250&fit=crop" alt="E-Commerce" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs font-medium">E-Commerce</span>
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">Micro-Frontends</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Micro-Frontends</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Angular 14 + Module Federation. NgRx state management, 60% fewer re-renders, 28% checkout conversion lift.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">NgRx</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Module Federation</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Schematics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PWA Marketing Suite -->
+                <div class="group bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition-all duration-300 lg:col-span-1">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" alt="PWA Marketing" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-yellow-600/20 text-yellow-300 rounded text-xs font-medium">PWA</span>
+                            <span class="px-2 py-1 bg-orange-600/20 text-orange-300 rounded text-xs font-medium">Marketing</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">PWA Marketing Suite</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Angular Universal + Service Workers. 78% mobile data reduction, 52% faster initial loads across 20+ sites.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Angular Universal</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Service Workers</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-xs">Angular Material</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Tech <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Stack</span></h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Angular Ecosystem -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-angular text-orange-400 mr-3"></i>Angular Ecosystem</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>Angular 17+, NgRx / Signals</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>Angular Material, Angular Universal</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>Nx Monorepo, RxJS, Angular CDK</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>Schematics, Standalone Components</div>
+                    </div>
+                </div>
+                <!-- Frontend -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-desktop text-orange-400 mr-3"></i>Frontend</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>TypeScript 7+, React / Next.js</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>TailwindCSS, SCSS / CSS-in-JS</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>PWA / Service Workers</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>Web Components, Storybook</div>
+                    </div>
+                </div>
+                <!-- DevOps & Tools -->
+                <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-cogs text-orange-400 mr-3"></i>DevOps & Tools</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>Docker, GitHub Actions</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>Vercel / Netlify, Jest / Cypress</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-3 w-5"></i>ESLint / Prettier</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Work</h2>
+                <p class="text-xl text-gray-400">Professional experience across Singapore tech companies</p>
+            </div>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 to-transparent"></div>
+                
+                <!-- NovaChain Labs -->
+                <div class="mb-12 flex items-start">
+                    <div class="w-16 h-16 bg-orange-600/20 rounded-full flex items-center justify-center border-2 border-orange-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-briefcase text-orange-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Senior Frontend Developer (Angular Lead)</h3>
+                            <span class="ml-4 text-sm text-gray-400">Jan 2022 - Oct 2025</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-orange-400 mb-3">NovaLink Technologies Pte Ltd — Singapore</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>Architected Angular 17+ enterprise dashboard; 42% bundle reduction, 98+ Lighthouse</li>
+                            <li>AngularJS → Angular 16 migration with Nx monorepo + SSR; 65% SEO traffic boost</li>
+                            <li>25+ lazy-loaded modules with RxJS real-time streams; sub-100ms UI updates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BrightWave Digital -->
+                <div class="mb-12 flex items-start">
+                    <div class="w-16 h-16 bg-orange-600/20 rounded-full flex items-center justify-center border-2 border-orange-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-briefcase text-orange-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Frontend Engineer (Angular Specialist)</h3>
+                            <span class="ml-4 text-sm text-gray-400">Aug 2019 - Dec 2022</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-orange-400 mb-3">BrightWave Digital — Singapore</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>Angular 14 e-commerce platform with NgRx; 28% checkout conversion lift</li>
+                            <li>Custom Angular Schematics; 3x development velocity across 8 teams</li>
+                            <li>Angular micro-frontends with Module Federation; independent deployments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skyline Interactive -->
+                <div class="flex items-start">
+                    <div class="w-16 h-16 bg-orange-600/20 rounded-full flex items-center justify-center border-2 border-orange-500/50 mr-6 flex-shrink-0">
+                        <i class="fas fa-briefcase text-orange-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <h3 class="text-xl font-bold text-white">Full-Stack Developer</h3>
+                            <span class="ml-4 text-sm text-gray-400">Jul 2018 - Jul 2019</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-orange-400 mb-3">Skyline Interactive Studio — Singapore</h4>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li>Responsive Angular 8+ marketing applications; 45% mobile engagement boost</li>
+                            <li>Performance optimization; 52% faster initial load times across 20+ sites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Let's <span class="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Work</span> Together</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Open for new Angular projects and collaborations</p>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Get in touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-orange-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <a href="mailto:happysemicolon@gmail.com" class="text-orange-400 hover:text-orange-300 font-mono">happysemicolon@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-orange-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Location</div>
+                                <div>Shenton Way, Singapore 068805</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-xl">
+                            <div class="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fab fa-github text-orange-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">GitHub</div>
+                                <a href="https://github.com/happysemicolon" target="_blank" class="text-orange-400 hover:text-orange-300 font-mono">@happysemicolon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea rows="5" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-vertical"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-4 px-8 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-[1.02] shadow-xl">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/80 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://github.com/happysemicolon" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-github text-2xl"></i></a>
+                <a href="https://linkedin.com/in" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"><i class="fab fa-linkedin text-2xl"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Cedric Lee. Built with <i class="fas fa-heart text-red-400"></i> and lots of coffee.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.style.backgroundColor = 'rgba(17, 24, 39, 0.95)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(17, 24, 39, 0.8)';
+            }
+        });
+
+        // Counter animation for experience numbers
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            counters.forEach(counter => {
+                const target = parseInt(counter.dataset.count);
+                const increment = target / 100;
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counters on scroll
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        observer.observe(document.querySelector('#about'));
+    </script>
+</body>
+</html>
